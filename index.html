@@ -8,46 +8,52 @@
  color: #000000;
 }
 
+.textdefault{
+	display:center;
+	padding: 50px 50px;
+}
+
 .buttonstyle{
- display:block;
+  color: #000000;
+  background-color: #FFFFFF;
   border: none;
   outline: none;
   width: 150px;
-  height: 50px;
+  height: 40px;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 675;
-  border-radius: 12px;
+  font-weight: 500;
+  border-radius: 3px;
   text-align: center;
   text-decoration: none;
-
+  float:right;
 }
 
 .mybutton {
- display:block;
-  margin: 2px 0px;
-  color: #b2b2b2;
-  background-color: #f7f7f7;
-  transition: 0.15s;
+  transition: 0.25s;
 }
 
 .mybutton:hover {
-  background-color: #e7e7e7;
-  transform: translatex(10px);
+  background-color: #e5e5e5;
+  transform: translateY(10px);
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 </style>
 </head>
 <body>
 
-<h1>Lorem ipsum</h1>
-<p>dolor sit amet, consectetur adipiscing elit.</p>
-
-<button class="buttonstyle mybutton">Homepage</button>
-<button class="buttonstyle mybutton">CV</button>
-<button class="buttonstyle mybutton">FAQ</button>
 <button class="buttonstyle mybutton">Contact</button>
+<button class="buttonstyle mybutton">FAQ</button>
+<button class="buttonstyle mybutton">CV</button>
+<button class="buttonstyle disabled">Homepage</button>
 
+<div class = "textdefault">
+<h1>Welcome!</h1>
 </div>
 
 </body>
