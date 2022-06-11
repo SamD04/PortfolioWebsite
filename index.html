@@ -3,8 +3,8 @@
 <head>
 <style>
 
-.arialbl {
- font-family: arial;
+.helveticabl {
+ font-family: helvetica;
  color: #000000;
 }
 
@@ -24,13 +24,13 @@
 
 .center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center
 }
 
 .backgroundImg {	
-	filter: blur(15px);
-        -webkit-filter: blur(15px);
+	filter: blur(20px);
+        -webkit-filter: blur(20px);
 	height: 10%;
 }
 
@@ -41,19 +41,25 @@
   font-variant: small-caps;
   color:#FFFFFF;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
-  transform:translate(-30%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .backgtextlower {
   font-family:verdana;
   font-size:20px;
   color:#FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  line-break: normal;
+  line-height: 20px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform:translate(-40%,-50%);
+  transform: translate(-50%, -50%);
+  max-width: 35%
 }
 
 .textimageContain {
@@ -102,7 +108,7 @@
 
 <body>
 
-<div class="center buttgroup arial header">
+<div class="center buttgroup helveticabl header">
 	<button class="buttonstyle disabled">Homepage</button>
 	<button class="buttonstyle mybutton">CV</button>
 	<button class="buttonstyle mybutton">FAQ</button>
@@ -112,12 +118,12 @@
 </div>
 
 <div class = "textimageContain">
-	<div class="center backgroundImg" style="margin-top:40px">
-		<img src = https://cdn.discordapp.com/attachments/586823678105223169/983826930681933834/unknown.png>
+	<div class="backgroundImg" style="margin-top:40px">
+		<img src = https://cdn.discordapp.com/attachments/586823678105223169/985294243050446878/gar.jpg>
 	</div>
 
-	<div class = "backgtexttitle">welcome</div>
-	<div class = "backgtextlower">Bottom text</div>
+	<div class = "backgtexttitle center">welcome</div>
+	<div class = "backgtextlower center">Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more</div>
 </div>
 
 </body>
