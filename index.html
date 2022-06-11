@@ -11,7 +11,7 @@
   width:100%;
   padding-top: 14px;
   padding-bottom:14px;
-  background: #1b6fde;
+  background: #23272a;
   border-width: 5px;
   color: white;
 }
@@ -24,13 +24,26 @@
 .center {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+}
+
+.right
+{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.left
+{
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
 .backgroundImg {	
-	filter: blur(20px);
-        -webkit-filter: blur(20px);
-	height: 10%;
+        height: 50%;
+        margin: -5px;
 }
 
 .backgtexttitle {
@@ -41,12 +54,14 @@
   color:#FFFFFF;
   position: absolute;
   top: 34%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
 }
 
 .backgtextlower {
   font-family:helvetica;
+  text-align: justify;
+  text-justify: inter-word;
   font-size:20px;
   color:#FFFFFF;
   margin-left: auto;
@@ -56,21 +71,24 @@
   line-height: 20px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   max-width: 38%
 }
 
 .textimageContain {
   position: relative;
-  text-align: center;
   color: white;
+  background-color:#2c2f33;
+  min-height: 500px;
+  min-width: 100%
+  overflow: hidden
 }
 
 .buttonstyle{
-  border: 4px solid #ffffff;
+  border: 3px solid #ffffff;
   color: #FFFFFF;
-  background-color: #1b6fde;
+  background-color: #23272a;
   width: 150px;
   height: 40px;
   cursor: pointer;
@@ -116,13 +134,13 @@
 </div>
 
 <div class = "textimageContain">
-	<div class="backgroundImg" style="margin-top:40px">
-		<img src = https://cdn.discordapp.com/attachments/586823678105223169/985294243050446878/gar.jpg>
+	<div class="backgroundImg right" style="margin-top:40px">
+		<img src = https://i.redd.it/p1m02yg48v391.jpg>
 	</div>
 
 
-	<div class = "backgtexttitle center">welcome</div>
-	<div class = "backgtextlower center">Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more</div>
+	<div class = "backgtexttitle left">welcome</div>
+	<div class = "backgtextlower left">Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more Bottom text and more text and more and more</div>
 </div>
 
 </body>
