@@ -3,14 +3,39 @@
 <head>
 <style>
 
-* {
+.arialbl {
  font-family: arial;
  color: #000000;
 }
 
-.textdefault{
-	display:center;
-	padding: 50px 50px;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundImg {	
+	filter: blur(10px);
+        -webkit-filter: blur(8px);
+	height: 10%;
+}
+
+.backgtext {
+  font-family:verdana;
+  font-size:46px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color:#FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textimageContain {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .buttonstyle{
@@ -26,7 +51,8 @@
   border-radius: 3px;
   text-align: center;
   text-decoration: none;
-  float:right;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .mybutton {
@@ -51,13 +77,21 @@
 
 <body>
 
-<button class="buttonstyle mybutton">Contact</button>
-<button class="buttonstyle mybutton">FAQ</button>
-<button class="buttonstyle mybutton">CV</button>
-<button class="buttonstyle disabled">Homepage</button>
+<div class="center buttgroup arial">
+	<button class="buttonstyle disabled">Homepage</button>
+	<button class="buttonstyle mybutton">CV</button>
+	<button class="buttonstyle mybutton">FAQ</button>
+	<button class="buttonstyle mybutton">Contact</button>
+</div>
 
-<div class = "textdefault">
-<h1>Welcome!</h1>
+</div>
+
+<div class = "textimageContain">
+	<div class="center backgroundImg" style="margin-top:40px">
+		<img src = https://cdn.discordapp.com/attachments/586823678105223169/983826930681933834/unknown.png>
+	</div>
+
+	<div class = "backgtext">welcome</div>
 </div>
 
 </body>
